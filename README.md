@@ -1,4 +1,4 @@
-# 🧠 NL2SQL Dashboard — Fine-tuned GGUF Model  
+# NL2SQL Dashboard — Fine-tuned GGUF Model  
 
 ### Generative AI Internship — Indian School of Business, Hyderabad (Jan 2025 – Aug 2025)  
 **Author:** Hritvija Singh  
@@ -6,7 +6,7 @@
 
 ---
 
-## 📘 Overview  
+## Overview  
 
 This project was developed as part of the **Generative AI Internship** at the **Indian School of Business (ISB), Hyderabad**.  
 It demonstrates a **Natural Language to SQL (NL2SQL)** system powered by a **fine-tuned CodeLLaMA-7B model (GGUF format)** that translates plain English questions into executable **SQLite SQL queries** — and visualizes real-time results.
@@ -15,7 +15,7 @@ The model and dashboard enable **non-technical users** to interact with structur
 
 ---
 
-## 🧩 Features  
+## Features  
 
 ✅ Fine-tuned **CodeLLaMA-7B (QLoRA)** model achieving **92% query match accuracy**  
 ✅ Converts natural language to SQL queries instantly  
@@ -25,7 +25,7 @@ The model and dashboard enable **non-technical users** to interact with structur
 
 ---
 
-## ⚙️ Project Architecture  
+## Project Architecture  
 
 **Pipeline:**  
 ```
@@ -34,7 +34,7 @@ User Query → LLM (CodeLLaMA GGUF) → SQL Query → SQLite Database → Visual
 
 ---
 
-## 📂 Repository Structure  
+## Repository Structure  
 
 ```
 ISB_NL2SQL/
@@ -50,43 +50,43 @@ ISB_NL2SQL/
 
 ---
 
-## 🧠 Technical Approach  
+## Technical Approach  
 
-### 🗃️ Data & Schema  
+### Data & Schema  
 - Designed a **role-aware relational schema** connecting Subordinate ↔ FM ↔ RM for 500+ survey responses.  
 - Built an **ETL pipeline (Python + Qualtrics API)** to normalize CSVs into relational tables within 90 seconds.
 
-### 🔧 Model Training  
+### Model Training  
 - Fine-tuned **CodeLLaMA-7B** using **QLoRA** on **9.3k NL→SQL pairs**.  
 - Quantized model to **GGUF** format for CPU-friendly deployment via `llama-cpp-python`.  
 
-### 💻 Application Layer  
+### Application Layer  
 - Implemented **Streamlit dashboard** for user queries and live SQL visualization.  
 - Backend built with **FastAPI** to handle inference requests.  
 
 ---
 
-## 🚀 How to Run Locally  
+## How to Run Locally  
 
-### 1️⃣ Clone the Repository  
+### Clone the Repository  
 ```bash
 git clone https://github.com/Hritvija/ISB_NL2SQL.git
 cd ISB_NL2SQL
 ```
 
-### 2️⃣ Install Dependencies  
+### Install Dependencies  
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Run the Application  
+### Run the Application  
 ```bash
-bash start.sh
+bash start.sh (check the path)
 # or
 streamlit run app.py
 ```
 
-### 4️⃣ Query Example  
+### Query Example  
 Input:  
 ```
 list name and email of users above age 30
@@ -99,22 +99,23 @@ SELECT name, email FROM Users WHERE age > 30;
 
 ---
 
-## 🖼️ Dashboard Preview  
+## Dashboard Preview  
 
 Below is a working preview of the NL2SQL dashboard — showcasing query input, SQL generation, and real-time database output visualization.
 
-![Dashboard Demo](./6cde8a3a-7011-4b16-a3d4-019245643168.png)
+![DEMO_ISB](https://github.com/user-attachments/assets/42bf99f3-6fbc-40e8-8712-de35e0edd1b7)
+
 
 ---
 
-## ⚠️ Deployment Note  
+## Deployment Note  
 
 Full deployment was **not possible** on free hosting platforms (e.g., Render, Hugging Face Spaces) because they **do not support LLM execution or GGUF quantized inference**.  
 However, the app runs **smoothly on local systems**, with fast response times (~1.8 s per query) using `llama-cpp-python`.
 
 ---
 
-## 🧰 Tech Stack  
+## Tech Stack  
 
 | Layer | Technologies |
 |:------|:--------------|
@@ -127,7 +128,7 @@ However, the app runs **smoothly on local systems**, with fast response times (~
 
 ---
 
-## 🧾 Outcome  
+## Outcome  
 
 ✅ Delivered cross-hierarchy behavioral insights on **10+ leadership constructs**  
 ✅ Achieved **92% query translation accuracy** on validation data  
@@ -136,7 +137,7 @@ However, the app runs **smoothly on local systems**, with fast response times (~
 
 ---
 
-## 👩‍💻 Author  
+## Author  
 
 **Hritvija Singh**  
 B.Tech, Indian Institute of Technology Kanpur  
