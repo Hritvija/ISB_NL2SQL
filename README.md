@@ -17,11 +17,11 @@ The model and dashboard enable **non-technical users** to interact with structur
 
 ## Features  
 
-✅ Fine-tuned **CodeLLaMA-7B (QLoRA)** model achieving **92% query match accuracy**  
-✅ Converts natural language to SQL queries instantly  
-✅ Visualizes tabular results directly from the database  
-✅ Handles **complex relational schema** across Subordinate ↔ FM ↔ RM hierarchies  
-✅ Runs entirely **locally** using `llama-cpp-python`  
+- Fine-tuned **CodeLLaMA-7B (QLoRA)** model achieving **92% query match accuracy**  
+- Converts natural language to SQL queries instantly  
+- Visualizes tabular results directly from the database  
+- Handles **complex relational schema** across Subordinate ↔ FM ↔ RM hierarchies  
+- Runs entirely **locally** using `llama-cpp-python`  
 
 ---
 
@@ -130,10 +130,10 @@ However, the app runs **smoothly on local systems**, with fast response times (~
 
 ## Outcome  
 
-✅ Delivered cross-hierarchy behavioral insights on **10+ leadership constructs**  
-✅ Achieved **92% query translation accuracy** on validation data  
-✅ Reduced manual SQL dependency by **>90%**  
-✅ Dashboard ready for company-wide integration at ISB  
+- Delivered cross-hierarchy behavioral insights on **10+ leadership constructs**  
+- Achieved **92% query translation accuracy** on validation data  
+- Reduced manual SQL dependency by **>90%**  
+- Dashboard ready for company-wide integration at ISB  
 
 ---
 
